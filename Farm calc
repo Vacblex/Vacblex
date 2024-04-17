@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>
+            title
+        </title>
+        <script>
+            var number_1 = Number(document.getElementById("in").value);
+            function calculate(){
+                number_1 = Number(document.getElementById("in").value);
+                var area2 = "number_1" * "number_1"
+                var per2 = "number_1" * 4
+                
+                document.getElementById("area").innerHTML = area2;
+                document.getElementById("per").innerHTML = per2;
+                }
+
+        </script>
+    </head>
+    <body>
+        <input id="in">
+            Side length
+        <br>
+        <button value="calculate" onclick="calculate()">
+            Calculation
+        </button>
+        <br>
+        <p>
+            Area:
+        </p>
+        <br>
+        <p id="area">
+            0
+        </p>
+        <br>
+        <p>
+            Perimeter:
+        </p>
+        <br>
+        <p id="per">
+            0
+        </p>
+    </body>
+</html>
